@@ -1,5 +1,57 @@
 import React, { useEffect, ReactNode } from "react";
-import "./style.css";
+
+if (typeof document !== 'undefined') {
+  const styleId = 'react-modal-ab-style';
+  if (!document.getElementById(styleId)) {
+    const style = document.createElement('style');
+    style.id = styleId;
+    style.innerHTML = `
+      .modal-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      .modal-content {
+        position: relative;
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 100%;
+        width: auto;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+      }
+
+      .modal-sm {
+        width: 300px;
+      }
+
+      .modal-md {
+        width: 500px;
+      }
+
+      .modal-lg {
+        width: 800px;
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+}
 
 interface ModalProps {
   isOpen: boolean;
@@ -57,10 +109,7 @@ const Modal: React.FC<ModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         {showCloseButton && (
-          <button
-            className="modal-close"
-            onClick={onClose}
-          >
+          <button className="modal-close" onClick={onClose}>
             &times;
           </button>
         )}
