@@ -4,7 +4,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/react-modal-ab.svg)](https://www.npmjs.com/package/react-modal-ab)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A simple, accessible, and customizable modal component for React.
+A simple modal component for React.
 
 ## Installation
 
@@ -97,17 +97,6 @@ Default CSS classes (automatically injected):
 - `.modal-content`  
 - `.modal-close`  
 - `.modal-sm`, `.modal-md`, `.modal-lg`
-
----
-
-## Build & Publish (for maintainers)
-
-```bash
-npm install
-npm run build
-npm version patch    # or minor / major
-npm publish --access public
-```
 
 ---
 
