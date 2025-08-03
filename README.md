@@ -59,7 +59,8 @@ function App() {
 |-------------|-----------------------------|----------|---------|---------------------------------------------|
 | `isOpen`    | `boolean`                   | ✅        | –       | Controls whether the modal is visible       |
 | `onClose`   | `() => void`                | ✅        | –       | Function triggered when closing the modal   |
-| `children`  | `React.ReactNode`           | ✅        | –       | Content displayed inside the modal          |
+| `title`     | `string`           | ✅        | –       | Title displayed inside the modal          |
+| `children`  | `React.ReactNode`           | ❌        | –       | Content displayed inside the modal          |
 | `size`      | `'sm' \| 'md' \| 'lg'`   | ❌        | `'md'`  | Predefined modal size                        |
 | `className` | `string`                   | ❌        | `''`    | Optional custom class for the modal content |
 
