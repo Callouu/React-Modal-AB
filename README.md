@@ -16,11 +16,11 @@ npm install react-modal-ab
 
 ## Features
 
-- ✅ Lightweight and accessible  
-- ✅ Automatically injects required CSS (no need to import styles manually)  
-- ✅ Supports predefined sizes: `sm`, `md`, `lg`  
-- 🎨 Customizable via `className` or your own CSS  
-- 🔐 Keyboard accessibility and focus handling  
+- Lightweight
+- Automatically injects CSS (no need to import styles manually)  
+- Supports predefined sizes: `sm`, `md`, `lg`  
+- Customizable via `className` or your own CSS  
+- Keyboard accessibility
 
 ---
 
@@ -37,10 +37,14 @@ function App() {
     <div>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
 
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} size="lg">
-        <h2>Hello 👋</h2>
-        <p>This is a large modal.</p>
-        <button onClick={() => setIsOpen(false)}>Close</button>
+      <Modal
+          isOpen={open}
+          onClose={() => setOpen(false)}
+          title="Modal Title !"
+          size="md"
+          closeOnOverlayClick={true}
+        >
+        <p>Modal subtitle !</p>
       </Modal>
     </div>
   );
@@ -115,8 +119,8 @@ MIT — [Callouu](https://github.com/Callouu)
 
 ## Changelog
 
-### 1.0.1
+### 2.0.0
 
-- 🧪 CSS is now injected automatically — no need to manually import `Modal.css`  
-- 🎛️ Added `size` prop with support for `modal-sm`, `modal-md`, `modal-lg`  
-- ✨ Simplified usage with no required style setup
+- CSS is now injected automatically — no need to manually import `Modal.css`  
+- Added `size` prop with support for `modal-sm`, `modal-md`, `modal-lg`  
+- Simplified usage with no required style setup
