@@ -1,9 +1,9 @@
 import React, { useEffect, ReactNode } from "react";
 
-if (typeof document !== 'undefined') {
-  const styleId = 'react-modal-ab-style';
+if (typeof document !== "undefined") {
+  const styleId = "react-modal-ab-style";
   if (!document.getElementById(styleId)) {
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.id = styleId;
     style.innerHTML = `
       .modal-overlay {
@@ -48,6 +48,13 @@ if (typeof document !== 'undefined') {
         font-size: 1.5rem;
         cursor: pointer;
       }
+
+      .modal-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #141414;
+      }
     `;
     document.head.appendChild(style);
   }
@@ -56,7 +63,7 @@ if (typeof document !== 'undefined') {
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  title?: ReactNode;
+  title?: string;
   children: ReactNode;
   showCloseButton?: boolean;
   closeOnOverlayClick?: boolean;
