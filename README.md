@@ -1,4 +1,4 @@
-# react-modal-ab
+# React-Modal-AB
 
 [![npm version](https://img.shields.io/npm/v/react-modal-ab.svg)](https://www.npmjs.com/package/react-modal-ab)
 [![npm downloads](https://img.shields.io/npm/dm/react-modal-ab.svg)](https://www.npmjs.com/package/react-modal-ab)
