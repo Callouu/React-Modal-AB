@@ -41,11 +41,11 @@ if (typeof document !== "undefined") {
 
       .modal-close {
         position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
+        top: 1rem;
+        right: 1rem;
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         cursor: pointer;
       }
 
