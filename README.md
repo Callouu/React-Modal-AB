@@ -109,6 +109,10 @@ MIT — [Callouu](https://github.com/Callouu)
 
 ## Changelog
 
+### 2.2.1
+
+- Hide content container if is empty
+
 ### 2.2.0
 
 - Fix issue when the content don't fit with modal container
