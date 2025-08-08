@@ -30,20 +30,20 @@ if (typeof document !== "undefined") {
 
 .modal-close {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  font-size: 1.5rem;
+  top: 5px;
+  right: 5px;
+  font-size: 1.7rem;
   border: none;
   background: transparent;
   cursor: pointer;
 }
 
 .modal-title {
-  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .modal-content {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
     `;
     document.head.appendChild(style);
@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({
           </button>
         )}
         {title && <h2 className="modal-title">{title}</h2>}
-        <div className="modal-content">{children}</div>
+        <div className={children ? "modal-content" : ""}>{children}</div>
       </div>
     </div>
   );
