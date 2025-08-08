@@ -109,6 +109,14 @@ MIT — [Callouu](https://github.com/Callouu)
 
 ## Changelog
 
+### 2.1.1
+
+- Add documentation
+
+### 2.1.0
+
+- Fix modal and text style
+
 ### 2.0.0
 
 - CSS is now injected automatically — no need to manually import `Modal.css`  
